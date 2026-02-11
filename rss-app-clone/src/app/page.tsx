@@ -49,7 +49,7 @@ export default function Home() {
           placeholder="https://example.com"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
-          className="flex-1 p-2 border rounded text-black border-gray-300"
+          className="flex-1 p-2 border rounded bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 outline-none"
         />
         <button
           type="submit"
@@ -63,7 +63,7 @@ export default function Home() {
       {error && <p className="text-red-500">{error}</p>}
 
       {feedUrl && (
-        <div className="p-4 bg-green-50 rounded border border-green-200 text-black">
+        <div className="p-4 bg-green-50 dark:bg-green-900/30 rounded border border-green-200 dark:border-green-800 text-green-800 dark:text-green-400">
           <p className="font-medium">Feed Generated!</p>
           <a
             href={feedUrl}
@@ -81,7 +81,7 @@ export default function Home() {
           <h2 className="text-xl font-semibold">Preview ({items.length} items)</h2>
           <ul className="space-y-4">
             {items.map((item, i) => (
-              <li key={i} className="p-4 border rounded hover:bg-gray-50 transition-colors">
+              <li key={i} className="p-4 border rounded border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                 <a
                   href={item.link}
                   target="_blank"
