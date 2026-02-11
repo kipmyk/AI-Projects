@@ -12,7 +12,7 @@ Every line of code, design decision, and documentation in this directory has bee
 
 2. **[RSS App Clone](./rss-app-clone)**: A Next.js application that scrapes websites and generates RSS feeds for them.
 
-   ![RSS App Clone Screenshot](./rss-app-clone-screenshot.png)
+   ![RSS App Clone Screenshot](./rss-app-clone/public/screenshot.png)
 
    - **Tech Stack**: Next.js 15, Tailwind CSS, Cheerio, RSS
    - **Key Features**:
